@@ -83,7 +83,7 @@ const Body = () => {
           id="dropdown"
           className={`relative ${
             isOpen ? "block" : "hidden"
-          } z-10 w-1/4 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700`}
+          } z-10 lg:w-1/4 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700`}
           style={{ top: "100%", left: 0 }}
           onClick={toggleDropdown}
         >
