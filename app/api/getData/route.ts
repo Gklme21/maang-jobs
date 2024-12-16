@@ -1,3 +1,4 @@
+import { Sort } from "mongodb";
 import clientPromise from "../../../utils/mongodb";
 import { NextResponse, NextRequest } from "next/server";
 
@@ -9,7 +10,12 @@ export async function GET(request: NextRequest) {
     const collection = db.collection("jobs");
 
     const query = filter === "All" ? {} : { company: filter };
-    const data = await collection.find(query).toArray();
+
+    const options = {
+      sort: { date: -1 } as Sort, // Sort by the "date" field in descending order (lexicographically)
+    };
+
+    const data = await collection.find(query, options).toArray();
 
     if (data.length === 0) {
       return NextResponse.json({ error: "No data found" }, { status: 404 });
