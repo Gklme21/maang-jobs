@@ -52,11 +52,11 @@ const Body = () => {
 
   return (
     <div className="flex flex-col justify-center items-center min-h-screen">
-      <div className="flex flex-col w-full justify-center items-center sticky top-10 mb-8 ">
+      <div className="flex flex-col lg:w-1/4 justify-center items-center sticky top-10 mb-8 ">
         <button
           id="dropdownDefaultButton"
           onClick={toggleDropdown}
-          className=" text-white bg-initial-blue hover:bg-zima-blue focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-xl px-5 py-2.5 text-center flex justify-center items-center lg:w-1/4"
+          className=" text-white bg-initial-blue hover:bg-zima-blue focus:ring-4 focus:outline-none focus:ring-blue-300 font-semibold rounded-lg text-xl px-5 py-2.5 text-center flex justify-center items-center w-full"
           type="button"
         >
           {displayCurrentSelection == "All"
@@ -83,7 +83,7 @@ const Body = () => {
           id="dropdown"
           className={`relative ${
             isOpen ? "block" : "hidden"
-          } z-10 lg:w-1/4 mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700`}
+          } z-10 w-full  mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700`}
           style={{ top: "100%", left: 0 }}
           onClick={toggleDropdown}
         >
