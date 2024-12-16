@@ -14,7 +14,7 @@ const NavBar = () => {
         </div>
       </div>
       <p className="flex justify-center items-center font-semibold text-xl lg:text-3xl my-12 w-4/5 mx-auto text-justify">
-        Check out the Entry-Level jobs from MAANG Companies
+        Check out the Entry-Level software jobs from MAANG Companies
       </p>
     </>
   );
