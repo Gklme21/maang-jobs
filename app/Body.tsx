@@ -83,18 +83,18 @@ const Body = () => {
           id="dropdown"
           className={`relative ${
             isOpen ? "block" : "hidden"
-          } z-10 w-full  mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow  dark:bg-gray-700`}
+          } z-10 w-full  mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow `}
           style={{ top: "100%", left: 0 }}
           onClick={toggleDropdown}
         >
           <ul
-            className="py-2 text-lg text-gray-700 dark:text-gray-200 text-center"
+            className="py-2 text-lg text-gray-700 text-center"
             aria-labelledby="dropdownDefaultButton"
           >
             {companies.map((company, index) => (
               <li key={index}>
                 <div
-                  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white cursor-pointer"
+                  className="block px-4 py-2 hover:bg-gray-100 cursor-pointer"
                   onClick={() => handleSelection(company)}
                 >
                   {company == "All" ? "All Companies" : company}
