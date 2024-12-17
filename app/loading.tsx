@@ -1,5 +1,5 @@
 export default function Loading() {
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
     <radialGradient
       id="a5"
       cx=".66"
@@ -49,5 +49,4 @@ export default function Loading() {
       r="70"
     ></circle>
   </svg>;
-  return <Loading />;
 }
