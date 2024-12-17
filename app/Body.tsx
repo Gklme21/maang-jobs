@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import Link from "next/link";
 
 interface CompanyDetails {
   id: string;
@@ -126,11 +125,11 @@ const Body = () => {
             key={item.id}
             className="flex w-3/4 lg:w-2/4 mx-auto border rounded-3xl bg-white p-10 my-4"
           >
-            <Link
+            <a
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col md:flex-row justify-between items-center w-full"
+              className="flex flex-col md:flex-row justify-between items-center w-full visited:text-purple-600"
             >
               <div className="flex items-center">
                 <Image
@@ -140,14 +139,14 @@ const Body = () => {
                   height={75}
                   className="w-8 h-auto 2xl:w-16"
                 />
-                <p className="2xl:text-4xl md:text-2xl ml-7 md:mr-5 visited:text-purple-600">
+                <p className="2xl:text-4xl md:text-2xl ml-7 md:mr-5 ">
                   {item.title}
                 </p>
               </div>
-              <p className="font-medium text-xs md:text-sm 2xl:text-lg mt-5 md:mt-0">
+              <p className="font-medium text-xs md:text-sm 2xl:text-lg mt-5 md:mt-0 text-black">
                 {item.date}
               </p>
-            </Link>
+            </a>
           </div>
         ))
       )}
