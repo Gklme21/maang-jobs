@@ -143,7 +143,7 @@ const Body = () => {
                   {item.title}
                 </p>
               </div>
-              <p className="font-medium text-xs md:text-sm 2xl:text-lg mt-5 md:mt-0 text-black">
+              <p className="whitespace-nowrap font-medium text-xs md:text-sm 2xl:text-lg mt-5 md:mt-0 text-black">
                 {item.date}
               </p>
             </a>
